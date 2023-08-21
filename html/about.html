@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jeff Taylor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>About Jeff Taylor</h1>
+    </div>
+  </div>
+    <div class="about-page">
+    <div class="sidenav">
+        <a href="./index.html">Home</a>
+        <a href="#services">Store</a>
+        <button class="dropdown-btn">Connect
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="./about.html">About</a>
+          <a href="#">Missions</a>
+          <a href="#">Events</a>
+          <a href="#">Contact</a>
+        </div>
+        <a href="./picking-up-sticks.html">Picking Up Sticks</a>
+        <a href="#">Donate</a>
+      </div>
+    </div>
+      <div class="quote">
+        <div class="quote-header">
+          <h1>No Word of God is void of power to accomplish its intent.</h1>
+        </div>
+        <div class="quote-body">
+          <p>Regardless of how great our need is, God is greater. Whether your need is spiritual, mental,</p> 
+          <p>physical, social or financial, God has a plan for your success. Taylor Ministries would like to</p> 
+          <p>help you to discover His plan and how you can impact your world! We desire to assist you to grow</p>
+          <p>in Jesus Christ and to connect you with the various outreaches of Taylor Ministries. We hope you</p>
+          <p>enjoy our content.</p>
+        </div>
+      </div>
+      <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Brief Biography: Birth to 1992</h1>
+          </div>
+          <div class="flip-card-back">
+                <p>Called and confirmed to the  ministry at age 11.</p>
+                <p>Began public speaking at age 14.</p>
+                <p>Attended and graduated Rhema Bible Training College in 1986.</p>
+                <p>Interned for one year at The Lord's Church, Bellflower, California.</p> 
+                <p>1987-1992 - Traveled as an associate minister with Nancy Harmon Ministries.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Brief Biography: 1992 to Present</h1>
+          </div>
+          <div class="flip-card-back">
+            <p>1996-2002 - Senior Pastor of Church Alive, Marietta, Georgia.
+              2002 to current - travels full time speaking for churches, television, seminars,  conferences, 
+              and Bible schools. Has appeared on many local and national Christian television programs. 
+              Travels overseas to many countries to speak in churches, crusades, seminars, Bible schools and radio 
+              and television medias.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/real_jefftaylor/" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+</body>
+
+</html>
