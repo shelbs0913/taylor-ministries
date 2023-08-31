@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jeff Taylor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./about.css">
+  
+</head>
+
+<body>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>About Jeff Taylor</h1>
+    </div>
+  </div>
+    <div class="about-page">
+    <div class="sidenav">
+        <a href="./index.html">Home</a>
+        <a href="#services">Store</a>
+        <button class="dropdown-btn">Connect
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="./about.html">About</a>
+          <a href="#">Missions</a>
+          <a href="#">Events</a>
+          <a href="#">Contact</a>
+        </div>
+        <a href="./picking-up-sticks.html">Picking Up Sticks</a>
+        <a href="#">Donate</a>
+      </div>
+    </div>
+      <div class="quote">
+        <div class="quote-body">
+          <p>"Take revival to My church." The Lord spoke to my heart after the sixth anniversary of pastoring. 
+          Resigning my church and returning to full-time, itinerant ministry was not my idea, but neither was 
+          calling me to global ministry.</p>
+        </div>
+        <div class="quote-header">
+          <h2>The Mission</h2>
+        </div>
+        <div class="quote-body">
+          <p>Declaring and demonstrating the gospel to this generation. By balancing the Word and Spirit of God,</p> 
+          <p>we develop believers on eternal principles in relevant language. By making biblical principles easy</p> 
+          <p>to understand, we increase the effectiveness of God's promises in our own lives and, in turn, our</p> 
+          <p>outreach to our communities. Our passion is to see people, of all walks of life, reach their full</p> 
+          <p>potential in Christ.</p>
+        </div>
+      </div>
+      <div class="card">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Brief Biography: Birth to 1992</h1>
+          </div>
+          <div class="flip-card-back">
+                <p>Called and confirmed to the  ministry at age 11.</p>
+                <p>Began public speaking at age 14.</p>
+                <p>Attended and graduated Rhema Bible Training College in 1986.</p>
+                <p>Interned for one year at The Lord's Church, Bellflower, California.</p> 
+                <p>1987-1992 - Traveled as an associate minister with Nancy Harmon Ministries.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>Brief Biography: 1992 to Present</h1>
+          </div>
+          <div class="flip-card-back">
+            <p>1996-2002 - Senior Pastor of Church Alive, Marietta, Georgia.
+              <p>2002 to current - travels full time speaking for churches, television, seminars,  conferences,</p>
+              <p>and Bible schools. Has appeared on many local and national Christian television programs.</p> 
+              <p>Travels overseas to many countries to speak in churches, crusades, seminars, Bible schools</p>
+              <p>and radio and television medias.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/real_jefftaylor/" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+</body>
+
+</html>
