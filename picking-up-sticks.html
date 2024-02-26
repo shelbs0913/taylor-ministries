@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="./picking-up-sticks.css">
 </head>
 <body>
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1>Picking Up Sticks - Now Available</h1>
-        </div>
-      </div>
-    
+  <br>
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./index.html">Home</a>
+      <a href="./about2.html">About</a>
+      <a href="./events.html">Events</a>
+      <a href="./connect.html">Connect</a>
+      <a href="./picking-up-sticks.html">Picking Up Sticks</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <span onclick="openNav()"></span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1 class="heading">Picking Up Sticks - Now Available</h1>
+    <br>
       <div class="card">
         <div class="container">
           <h2>Jeff Taylor's brand new book, Picking Up Sticks, is now available in hard copy and on Amazon Kindle!
@@ -20,7 +29,19 @@
             this informative book of recovering your service to God. Jeff utilizes the amazing story of the Apostle 
             Paul on the island of Malta, and a personal testimony, to illustrate how you can turn the enemy's plan 
             into victory for you and for others.</h2>
+
+          <img src="./img/picking-up-sticks.jpg" alt="book" width="500px">
         </div>
       </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
 </body>
 </html>

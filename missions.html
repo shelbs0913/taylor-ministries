@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Missions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./missions.css">
 </head>
 <body>
-    
+        <br>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="./about2.html">About</a>
+            <a href="./events.html">Events</a>
+            <a href="./connect.html">Connect</a>
+            <a href="./picking-up-sticks.html">Picking Up Sticks</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <span onclick="openNav()"></span>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <script>
+     function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+     }       
+     function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+     }       
+    </script>
+
+    <h1 class="heading">Missions</h1>
+    <p>Taylor Ministries reaches locally to bring revival and globally to impact people with the Gospel.</p>
+        
 </body>
 </html>
